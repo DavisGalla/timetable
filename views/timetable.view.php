@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
+    <style>
+       
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color:darkgray;
+            font-size: 24px;
+        }
+        
+        .centered-text {
+            text-align: center;
+            font-size: 28px;
+            margin: 20px 0;
+        }
+        
+        .labi {
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .form-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-container p {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+
+        select {
+            padding: 5px;
+        }
+    </style> 
 </head>
 <body>
 
