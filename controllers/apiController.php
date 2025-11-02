@@ -8,15 +8,11 @@
     if (isset($_POST['group'])){
         $groupId = $_POST['group'];
         $groupName =  $groups['data'][$groupId-1]['name'];
-        require "../views/timetable.view.php";
-
+        require __DIR__ . "/../views/timetable.view.php";
     }
     else {
         $groupId = 0;
-        require "../views/timetable.view.php";
-        
+        $groupName =  $groups['data'][$groupId-1]['name'];
+        require __DIR__ . "/../views/timetable.view.php";
     }
-
-
-
 ?>
