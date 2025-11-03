@@ -11,7 +11,7 @@
         require __DIR__ . "/../views/timetable.view.php";
     }
     else {
-        $groupId = 0;
+        $groupId = 1;
         $groupName =  $groups['data'][$groupId-1]['name'];
         require __DIR__ . "/../views/timetable.view.php";
     }

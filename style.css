@@ -1,47 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
 
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        
-        table, th, td {
-            border: 1px solid black;
-            padding: 8px;
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        th {
-            background-color:darkgray;
-            font-size: 24px;
-        }
-        
-        .centered-text {
+.timetable-container {
+  width: 100%;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.timetable-row {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.timetable-card {
+  min-width: 300px;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lesson-block {
+  background: #232323;
+  border-radius: 10px;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.lesson-time {
+  color: #4a9eff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.lesson-name {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.lesson-details {
+  font-size: 0.9rem;
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.no-lessons {
+  color: #666;
+  text-align: center;
+  padding: 20px 0;
+}
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background: #232228;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ .centered-text {
             text-align: center;
             font-size: 28px;
             margin: 20px 0;
+            color:#4a9eff;
         }
-        
-        .labi {
+
+.labi {
             text-align: right;
             margin-right: 20px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px;
-        }
-
-        .form-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .form-container p {
-            margin-right: 10px;
-            margin-bottom: 0;
-        }
-
-        select {
-            padding: 5px;
+            color:#4a9eff;
         }
